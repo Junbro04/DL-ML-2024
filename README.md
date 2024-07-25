@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/78621301-5609-4e0b-93b2-79d92efb56c4)# DL-ML-2024
+# DL-ML-2024
 
 ## We study to ML(Machine Learning) and DL(Deep Learning)
 - [동빈나](https://www.youtube.com/@dongbinna)
