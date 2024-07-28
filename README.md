@@ -46,6 +46,7 @@ $3x = 9$ 라는 수식을 보면 우리는 $x$에 $3$이 들어가면 정확하�
 ANN을 알아보기 전에 간략히 그래프에 대해서 알아봅시다.
 ![image](https://github.com/user-attachments/assets/9bf05bc6-c3ac-4dbd-a63f-854a77feac68)
 
+
 그래프는 원형 점으로  생긴 **노드(Node)** 와 선으로 이루어진 **엣지(Edge)로** 이루어 져 있습니다.
 
 그래프의 종류는 엣지가 양방향인지 단방향인지에 따라 "undirect graph"와 "direct graph"으로 나뉩니다. 현재 위에 그래프는 undirect grapth입니다.
