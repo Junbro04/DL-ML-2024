@@ -1,12 +1,15 @@
 # DL-ML-2024
 
 ## We study to ML(Machine Learning) and DL(Deep Learning)
+딥러닝과 머신러닝을 공부하는 스터디입니다.(2024.07.24~)
+주차마다 배운내용을 해당 readme에 기록할 예정입니다. 
+잘못된 설명은 s6xybr8in@konkuk.ac.kr 으로 메일주시면 감사하겠습니다.
 - [동빈나](https://www.youtube.com/@dongbinna)
 - [코드없는프로그래밍](https://www.youtube.com/@user-pw9fm4gc7e)
 - [혁펜하임](https://www.youtube.com/@hyukppen)
 - [메타코드](https://www.youtube.com/@mcodeM)
 
-# 1 주차
+# 1 주차 
 ## 목표: MNIST data set을 사용해서 손글씨 인식 프로그램을 만들기
 - ![image](https://github.com/user-attachments/assets/69a40a16-cf26-4cef-a516-01cc45c41f70)
 
@@ -35,7 +38,7 @@ $3x = 9$ 라는 수식을 보면 우리는 $x$에 $3$이 들어가면 정확하�
 
 따라서 **휴리스틱 알고리즘**은 정확하지는 않지만 거의 정답에 가까운 해를 찾는 알고리즘입니다. 
 
-저 수식에서 우리가 만약 $x=3$이라는 것을 모른다거나, 시간이 오래 걸린다면, 어떠한 휴리스틱 알고리즘이 (빠르게) $x=2.9888$ 이런식으로 근사시키는 것입니다. 
+저 수식에서 우리가 만약 $x=3$이라는 것을 모른다거나, 해를 찾는 시간이 오래 걸린다면, 어떠한 휴리스틱 알고리즘이 (빠르게) $x=2.9888$ 이런식으로 근사시키는 것입니다. 
 
 실제로 $3*(2.9888) = 8.9664$로 오차가 $-0.0336$정도 나오고 이러한 오차를 줄일 수 있다면 좋은 알고리즘이라는거죠
 
@@ -45,3 +48,19 @@ ANN을 알아보기 전에 간략히 그래프에 대해서 알아봅시다.
 
 그래프는 원형 점으로  생긴 **노드(Node)** 와 선으로 이루어진 **엣지(Edge)로** 이루어 져 있습니다.
 
+그래프의 종류는 엣지가 양방향인지 단방향인지에 따라 "undirect graph"와 "direct graph"으로 나뉩니다. 현재 위에 그래프는 undirect grapth입니다.
+
+## Artificial Neural Network 와 Deep Neural Network
+
+![image](https://github.com/user-attachments/assets/67ff420b-db17-4b47-ae9f-ad7b2a1f8c39)
+
+
+
+
+
+
+## Loss funtion과 Local Minimum
+
+
+
+## Overfitting문제와 해결
