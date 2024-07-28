@@ -21,9 +21,9 @@
   - [컴퓨터비전](https://www.youtube.com/watch?v=6MWlrSNXYi8&list=PLDV-cCQnUlIaIFHQwuXRRSL833cRAS76M)
   - [MNIST](https://www.youtube.com/watch?v=RjpkS-5rW4s&t=565s)
 
-- [휴리스틱](https://en.wikipedia.org/wiki/Heuristic_(computer_science) 에 대해서
+- [휴리스틱](https://en.wikipedia.org/wiki/Heuristic_(computer_science))에 대해서
 - [그래프](https://en.wikipedia.org/wiki/Graph_theory) 에 대해서
-- [ANN](https://en.wikipedia.org/wiki/Neural_network_(machine_learning) 에 대해서([DNN](https://en.wikipedia.org/wiki/Deep_learning#Deep_neural_networks))
+- [ANN](https://en.wikipedia.org/wiki/Neural_network_(machine_learning))에 대해서([DNN](https://en.wikipedia.org/wiki/Deep_learning#Deep_neural_networks))
 - loss funtion 그리고 local minimum 문제와 해결
 - overfitting(과적합) 문제 그리고 해결(Drop out)
 
@@ -34,8 +34,7 @@ $3x = 9$ 라는 수식을 보면 우리는 $x$에 $3$이 들어가면 정확하�
 
 ## 그래프(Graph Theory)
 ANN을 알아보기 전에 간략히 그래프에 대해서 알아봅시다.
-
-![[Pasted image 20240728185552.png]]
+![image](https://github.com/user-attachments/assets/9bf05bc6-c3ac-4dbd-a63f-854a77feac68)
 
 그래프는 원형 점으로  생긴 **노드(Node)** 와 선으로 이루어진 **엣지(Edge)로** 이루어 져 있습니다.
 
