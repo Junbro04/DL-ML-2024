@@ -49,7 +49,9 @@ $3x = 9$ 라는 수식을 보면 우리는 $x$에 $3$이 들어가면 정확하�
 
 ## 그래프(Graph Theory)
 ANN을 알아보기 전에 간략히 그래프에 대해서 알아봅시다.
-![image](https://github.com/user-attachments/assets/9bf05bc6-c3ac-4dbd-a63f-854a77feac68)
+<div style="text-align: center;">
+  <img src="https://github.com/user-attachments/assets/9bf05bc6-c3ac-4dbd-a63f-854a77feac68" alt="Graph Theory">
+</div>
 
 
 그래프는 원형 점으로  생긴 **노드(Node)** 와 선으로 이루어진 **엣지(Edge)로** 이루어 져 있습니다.
