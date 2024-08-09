@@ -18,4 +18,9 @@
 ## 목표: MNIST data set을 사용해서 손글씨 인식 프로그램을 만들기
 - ![image](https://github.com/user-attachments/assets/b80a7f4c-fc16-4774-9381-60cfd2084216)
 
-- [READEME](1WEEK_CNN/README.md)
+- [READEME](WEEK1_CNN/README.md)
+
+# 2 주차
+## 목표: 가짜이미지 생성
+- 
+- [README](WEEK2_GAN/README.md)
