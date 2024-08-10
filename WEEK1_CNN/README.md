@@ -4,20 +4,44 @@
 
 - 논문:
   - https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf
-  - https://arxiv.org/pdf/1511.08458  
-- 블로그: https://eumgill98.tistory.com/12
-- 유튜브:
-  - [AI기초수학](https://www.youtube.com/watch?v=Pm3BBaVRcJA)
-  - [Pytorch](https://www.youtube.com/watch?v=_3JAG9vORfo)
-  - [딥러닝](https://www.youtube.com/watch?v=WKnUYTxaPn4&list=PLDV-cCQnUlIZnEHuRFc1OZfcYjbgi4QnD)
-  - [컴퓨터비전](https://www.youtube.com/watch?v=6MWlrSNXYi8&list=PLDV-cCQnUlIaIFHQwuXRRSL833cRAS76M)
-  - [MNIST](https://www.youtube.com/watch?v=RjpkS-5rW4s&t=565s)
+  - https://arxiv.org/pdf/1511.08458 
+- 참고한 링크:
+  - https://eumgill98.tistory.com/12
+  - 
 
-- [휴리스틱](https://en.wikipedia.org/wiki/Heuristic_(computer_science))에 대해서
-- [그래프](https://en.wikipedia.org/wiki/Graph_theory) 에 대해서
-- [ANN](https://en.wikipedia.org/wiki/Neural_network_(machine_learning))에 대해서([DNN](https://en.wikipedia.org/wiki/Deep_learning#Deep_neural_networks))
-- loss funtion 그리고 local minimum 문제와 해결
-- overfitting(과적합) 문제 그리고 해결(Drop out)
+### Prelearning before reading the paper
+- About a [Heuristic Algorithm](https://en.wikipedia.org/wiki/Heuristic_(computer_science))
+- What is [Graph](https://en.wikipedia.org/wiki/Graph_theory)?
+- About a [ANN](https://en.wikipedia.org/wiki/Neural_network_(machine_learning)) and ([DNN](https://en.wikipedia.org/wiki/Deep_learning#Deep_neural_networks))
+- Loss funtion 
+  - [MSE](https://en.wikipedia.org/wiki/Mean_squared_error)
+  - [cross entropy](https://en.wikipedia.org/wiki/Cross-entropy)
+- Optimizer
+  - [GD](https://en.wikipedia.org/wiki/Gradient_descent)
+  - Local minima problem
+  - [SGD](https://en.wikipedia.org/wiki/Stochastic_gradient_descent)
+  - [Adam](https://arxiv.org/abs/1412.6980)
+- Overfitting problem and Solving(Dropout)
+  - Definition
+  - Dropout
+- [Convolution](https://en.wikipedia.org/wiki/Convolution)
+  - Definition
+  - Forward and Backward
+### [Paper](https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf) review
+1. Intrduction
+2. Dataset
+3. The Architecture
+  - 1. Relu and tanh
+  - 3. Local Response Normalization
+  - 4. Overlapping Pooling
+  - 5. Overall Architecture
+4. Reducing Overfitting
+  - 1. Data Argmentation
+  - 2. Dropout
+5. Details of learning
+6. Results
+  - 1. Qualitative Evaluations
+7. Discussion
 
 ## 휴리스틱 알고리즘이란?
 
@@ -58,3 +82,4 @@ ANN을 알아보기 전에 간략히 그래프에 대해서 알아봅시다.
 ## Overfitting 문제와 해결
 
 ### Drop out
+
