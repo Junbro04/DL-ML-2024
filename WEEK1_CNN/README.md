@@ -13,6 +13,7 @@
 - About a [Heuristic Algorithm](https://en.wikipedia.org/wiki/Heuristic_(computer_science))
 - What is [Graph](https://en.wikipedia.org/wiki/Graph_theory)?
 - About a [ANN](https://en.wikipedia.org/wiki/Neural_network_(machine_learning)) and ([DNN](https://en.wikipedia.org/wiki/Deep_learning#Deep_neural_networks))
+- Batch and Epoch
 - Loss funtion 
   - [MSE](https://en.wikipedia.org/wiki/Mean_squared_error)
   - [cross entropy](https://en.wikipedia.org/wiki/Cross-entropy)
@@ -42,7 +43,7 @@
 6. Results
   - 1. Qualitative Evaluations
 7. Discussion
-
+# Prelearning before the paper
 ## 휴리스틱 알고리즘이란?
 
 $3x = 9$ 라는 수식을 보면 우리는 $x$에 $3$이 들어가면 정확하다는 것을 알 수 있습니다. 
@@ -70,16 +71,40 @@ ANN을 알아보기 전에 간략히 그래프에 대해서 알아봅시다.
 <div style="text-align: center;">
   <img src="https://github.com/user-attachments/assets/67ff420b-db17-4b47-ae9f-ad7b2a1f8c39" alt="ANN">
 </div>
-
-
-## Loss funtion과 Local Minimum
-
-
-
 ## Batch and Epoch
+
+## Loss funtion
+### MSE
+### Cross entropy
+
+
+## Optimizer
+### GD
+### Local Minima problem
+### SGD
+### Adam
 
 
 ## Overfitting 문제와 해결
+### Definition
+### Dropout
 
-### Drop out
+## Convoltuion
+### Defintion
 
+# Paper Review
+
+## Introduction
+## Dataset
+## The Architecture
+### Relu and tanh
+### Local Response Normalization
+### Overlapping Pooling
+### Overall Architecture
+## Reducing Overfitting
+### Data Argmentation
+### Dropout
+## Details of learning
+## Results
+### Qualitative Evaluations
+## Discussion
