@@ -9,7 +9,7 @@
   - https://eumgill98.tistory.com/12
   - 
 
-### Prelearning before reading the paper
+### Pre-study for the Pape
 - About a [Heuristic Algorithm](https://en.wikipedia.org/wiki/Heuristic_(computer_science))
 - What is [Graph](https://en.wikipedia.org/wiki/Graph_theory)?
 - About a [ANN](https://en.wikipedia.org/wiki/Neural_network_(machine_learning)) and ([DNN](https://en.wikipedia.org/wiki/Deep_learning#Deep_neural_networks))
@@ -43,7 +43,7 @@
 6. Results
   - 1. Qualitative Evaluations
 7. Discussion
-# Prelearning before the paper
+# Pre-study for the Pape
 ## 휴리스틱 알고리즘이란?
 
 $3x = 9$ 라는 수식을 보면 우리는 $x$에 $3$이 들어가면 정확하다는 것을 알 수 있습니다. 
@@ -71,10 +71,20 @@ ANN을 알아보기 전에 간략히 그래프에 대해서 알아봅시다.
 <div style="text-align: center;">
   <img src="https://github.com/user-attachments/assets/67ff420b-db17-4b47-ae9f-ad7b2a1f8c39" alt="ANN">
 </div>
+
+ANN은 Input Layer에서 Output Layer로 진행되는 방식을 Forward pass라 합니다.
+반대로 Output Layer에서 Input Layer로 손실함수를 통해 Optimize하는 것을 Backward pass라 합니다. 
+Input Layer와 Output Layer 사이에 있는 Layer(층)을 Hidden Layer(은닉층)이라고 합니다. 이러한 Hidden Layer가 2개이상이라면 그런 ANN을 DNN이라고 부릅니다.
+각 간선에는 Weight(가중치)가 존재하고 Forward로 넘어갈때 이전노드*가중치로 넘어갑니다. 그리고 은닉 층에는 기본적으로 bias(편향)이 있어서 +bias도 해줘야 합니다. 즉 다음 노드의 값 = (이전 노드) * (가중치) + 편향 입니다.
+그런데 우리는 이러한 NN을 통해서 복잡한 
+
+
+
 ## Batch and Epoch
 
 ## Loss funtion
 ### MSE
+
 ### Cross entropy
 
 
