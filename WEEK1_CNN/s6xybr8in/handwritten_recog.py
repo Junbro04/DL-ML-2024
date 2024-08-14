@@ -1,8 +1,8 @@
 from tensorflow.keras.models import load_model
 import numpy as np
 import cv2
-model = load_model('mnist_cnn_model.h5')
-image = cv2.imread('image2.jpg')
+model = load_model('WEEK1_CNN/s6xybr8in/mnist_cnn_model.keras')
+image = cv2.imread('WEEK1_CNN/s6xybr8in/image2.jpg')
 
 height = 720
 width = 1024
@@ -21,9 +21,9 @@ for idx,contour in enumerate(contours):
     x, y, w, h = cv2.boundingRect(contour)
     if w < 10 or h < 10:
         continue
-    cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 0), 2)
+    cv2.rectangle(image, (x, y), (x + max(w,h), y + max(w,h)), (0, 255, 0), 2)
     name = 'caped_image' + str(idx) + '.jpg'
-    cap_image = bitwise_not[y:y+h, x:x+w]
+    cap_image = bitwise_not[y:y+max(w,h), x:x+max(w,h)]
     cap_image = cv2.resize(cap_image, (28, 28))
     cv2.imwrite(name,cap_image)
     roi = cap_image.astype('float32') / 255

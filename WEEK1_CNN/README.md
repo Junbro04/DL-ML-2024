@@ -7,14 +7,16 @@
   - https://arxiv.org/pdf/1511.08458 
 - 참고한 링크:
   - https://eumgill98.tistory.com/12
+  - https://ratsgo.github.io/deep%20learning/2017/05/14/backprop/
+  - https://ratsgo.github.io/deep%20learning/2017/04/05/CNNbackprop/
   - 
 
-### Pre-study for the Pape
+### Pre-study for the Paper
 - About a [Heuristic Algorithm](https://en.wikipedia.org/wiki/Heuristic_(computer_science))
 - What is [Graph](https://en.wikipedia.org/wiki/Graph_theory)?
 - About a [ANN](https://en.wikipedia.org/wiki/Neural_network_(machine_learning)) and ([DNN](https://en.wikipedia.org/wiki/Deep_learning#Deep_neural_networks))
 - Batch and Epoch
-- Loss funtion 
+- Loss function 
   - [MSE](https://en.wikipedia.org/wiki/Mean_squared_error)
   - [cross entropy](https://en.wikipedia.org/wiki/Cross-entropy)
 - Optimizer
@@ -52,10 +54,6 @@ $3x = 9$ 라는 수식을 보면 우리는 $x$에 $3$이 들어가면 정확하�
 
 따라서 **휴리스틱 알고리즘**은 정확하지는 않지만 거의 정답에 가까운 해를 찾는 알고리즘입니다. 
 
-저 수식에서 우리가 만약 $x=3$이라는 것을 모른다거나, 해를 찾는 시간이 오래 걸린다면, 어떠한 휴리스틱 알고리즘이 (빠르게) $x=2.9888$ 이런식으로 근사시키는 것입니다. 
-
-실제로 $3*(2.9888) = 8.9664$로 오차가 $-0.0336$정도 나오고 이러한 오차를 줄일 수 있다면 좋은 알고리즘이라는거죠
-
 ## 그래프(Graph Theory)
 ANN을 알아보기 전에 간략히 그래프에 대해서 알아봅시다.
 <div style="text-align: center;">
@@ -73,22 +71,41 @@ ANN을 알아보기 전에 간략히 그래프에 대해서 알아봅시다.
 </div>
 
 ANN은 Input Layer에서 Output Layer로 진행되는 방식을 Forward pass라 합니다.
+
 반대로 Output Layer에서 Input Layer로 손실함수를 통해 Optimize하는 것을 Backward pass라 합니다. 
-Input Layer와 Output Layer 사이에 있는 Layer(층)을 Hidden Layer(은닉층)이라고 합니다. 이러한 Hidden Layer가 2개이상이라면 그런 ANN을 DNN이라고 부릅니다.
+
+Input Layer와 Output Layer 사이에 있는 Layer(층)을 Hidden Layer(은닉층)이라고 합니다.
+
+이러한 Hidden Layer가 2개이상이라면 그런 ANN을 DNN이라고 부릅니다.
+
 각 간선에는 Weight(가중치)가 존재하고 Forward로 넘어갈때 이전노드*가중치로 넘어갑니다. 그리고 은닉 층에는 기본적으로 bias(편향)이 있어서 +bias도 해줘야 합니다. 즉 다음 노드의 값 = (이전 노드) * (가중치) + 편향 입니다.
-그런데 우리는 이러한 NN을 통해서 복잡한 
 
-
+그런데 우리는 이러한 NN을 통해서 복잡한 함수를 모델링 할 수 없습니다.
+[이미지]()
+다음 사진을 보면 이러한 모델은 결국 Wx + b 꼴이기 때문에 곡선을 표현할 수 없습니다.
+따라서 각 노드에 Activation function을 적용시켜 비선형성을 줍니다.
+다음 [링크](텐서플로우.플레이그라운드)에 들어가보면 Activation function이 어떻게 비선형성을 주는지 시각화해서 볼 수 있습니다.
+[이미지]()
 
 ## Batch and Epoch
+- 배치(Batch) : 한번에 학습하는 데이터 단위, 1 iteration = 1batch
+- 에폭(Epoch) : 전체 데이터셋을 학습 시키는 단위
 
-## Loss funtion
+## Loss function
+- 모델이 예측한 값과 실제 값이 얼만큼 차이가 나는지 수치화시킨 함수
+
 ### MSE
+$f(x) = \frac{1}{2}\displaystyle\sum^{n}_{1} (\hat y - y)^2$
 
 ### Cross entropy
 
 
+## Backpropagation
+
+
+
 ## Optimizer
+학습의 목적은 Loss function을 최소화 시키는 것. 따라서 Backpropagation을 할 때 최솟값으로 갱신 시켜주는 방법을 Optimizer라고 합니다.
 ### GD
 ### Local Minima problem
 ### SGD
@@ -101,7 +118,8 @@ Input Layer와 Output Layer 사이에 있는 Layer(층)을 Hidden Layer(은닉�
 
 ## Convoltuion
 ### Defintion
-
+### Forward pass
+### Backward pass
 # Paper Review
 
 ## Introduction
